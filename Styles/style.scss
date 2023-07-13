@@ -1,9 +1,59 @@
 //Para configurar os fundos. A ordem URL, Repeat , position, size
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: url(../assets/bg-desktop.jpg) no-repeat top center/cover ;
 }
 
-.container{
-    width: 360px;
-    height: 192px;
+body *{
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
+
+#container{
+    width: 360px;
+    margin: auto;
+}
+
+#profile{
+    margin-top: 56px;
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    width: 112px;
+}
+
+#profile p{
+    padding-top: 8px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
+    background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+}   
+
+
