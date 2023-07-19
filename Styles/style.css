@@ -4,13 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-mobile: url(../assets/bg-mobile.jpg) ;
+  --surface-color-light: rgba(0, 0, 0, 0.05) ;
+  --stroke-color: rgba(0, 0, 0, 0.50) ;
+  --tex-color: white ;
+}
+
 body {
-  background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-mobile) no-repeat top center/cover;
 }
 
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--tex-color);
 }
 
 #container {
