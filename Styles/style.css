@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(../assets/bg-desktop.jpg) no-repeat top center/cover;
+  background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
 body * {
@@ -15,7 +15,9 @@ body * {
 
 #container {
   width: 360px;
-  margin: auto;
+  margin: 56px auto 0;
+  padding: 0 24px;
+  border: solid 1px red;
 }
 
 #profile {
@@ -39,6 +41,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 0;
 }
 
 ul li a {
@@ -52,4 +55,46 @@ ul li a {
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  font-family: Inter;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.6s;
+}
+
+ul li a:hover {
+  border: 1.5px solid white;
+  background: var(--surface-color-dark-mode-hover, rgba(255, 255, 255, 0.014));
+}
+
+#midias {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 24px;
+  font-size: 24px;
+}
+
+#midias a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+#midias a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+footer {
+  margin-bottom: 34px;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer a {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
