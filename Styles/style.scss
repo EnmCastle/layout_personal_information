@@ -10,6 +10,7 @@
     --surface-color: rgba(255, 255, 255, 0.10) ; //back a
     --stroke-color: rgba(255, 255, 255, 0.50)  ; //border
     --tex-color: white ;
+    --mode-btn: url(../assets/moon-stars.svg);
 }
 
 #Lg{
@@ -17,6 +18,7 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --tex-color: rgba(0, 0, 0, 1) ;
     --stroke-color: rgba(0, 0, 0, 1) ;
+    --mode-btn: url(../assets/sun.svg);
 }
 
 body{
@@ -28,6 +30,36 @@ body *{
     color: var(--tex-color);
 }
 
+.switch{
+    position: relative;
+    width: 64px;
+    height: 24px;
+    margin: 0  auto;
+}
+
+.switch button{
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: white var(--mode-btn) no-repeat center;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    border: 1px solid var(--stroke-color);
+    background-color: var(--surface-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    
+}
 
 #container{
     width: 360px;
@@ -52,6 +84,7 @@ body *{
     font-weight: 500;
     line-height: 24px;
 }
+
 
 ul{
     list-style: none;
