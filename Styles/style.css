@@ -6,9 +6,16 @@
 
 :root {
   --bg-mobile: url(../assets/bg-mobile.jpg) ;
-  --surface-color-light: rgba(0, 0, 0, 0.05) ;
-  --stroke-color: rgba(0, 0, 0, 0.50) ;
+  --surface-color: rgba(255, 255, 255, 0.10) ;
+  --stroke-color: rgba(255, 255, 255, 0.50) ;
   --tex-color: white ;
+}
+
+#Lg {
+  --bg-mobile: url(../assets/bg-mobile-light.jpg);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --tex-color: rgba(0, 0, 0, 1) ;
+  --stroke-color: rgba(0, 0, 0, 1) ;
 }
 
 body {
@@ -24,7 +31,6 @@ body * {
   width: 360px;
   margin: 56px auto 0;
   padding: 0 24px;
-  border: solid 1px red;
 }
 
 #profile {
@@ -52,14 +58,13 @@ ul {
 }
 
 ul li a {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
   border-radius: 8px;
-  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
-  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
+  border: 1px solid var(--stroke-color);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   font-family: Inter;
@@ -69,8 +74,8 @@ ul li a {
 }
 
 ul li a:hover {
-  border: 1.5px solid white;
-  background: var(--surface-color-dark-mode-hover, rgba(255, 255, 255, 0.014));
+  border: 1.5px solid var(--tex-color);
+  background: var(--surface-color);
 }
 
 #midias {
@@ -89,7 +94,7 @@ ul li a:hover {
 }
 
 #midias a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
