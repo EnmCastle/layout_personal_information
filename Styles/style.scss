@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --bg-mobile: url(../assets/bg-mobile.jpg) ;  
     --surface-color: rgba(255, 255, 255, 0.10) ; //back a
@@ -12,8 +13,7 @@
     --tex-color: white ;
     --mode-btn: url(../assets/moon-stars.svg);
 }
-
-#Lg{
+.Lg{
     --bg-mobile: url(../assets/bg-mobile-light.jpg);
     --surface-color: rgba(0, 0, 0, 0.05);
     --tex-color: rgba(0, 0, 0, 1) ;
