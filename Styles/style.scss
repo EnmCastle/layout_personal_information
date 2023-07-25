@@ -47,7 +47,12 @@ body *{
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
+    border-radius: 9999px;
 }
+
+.switch button:hover {
+    
+  }
 
 .switch span{
     display: block;
