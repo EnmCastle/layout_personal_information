@@ -128,7 +128,7 @@ ul li a:hover {
 }
 
 #midias a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--highlight);
   border-radius: 50%;
 }
 
