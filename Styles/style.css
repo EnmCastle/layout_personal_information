@@ -10,6 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.50) ;
   --tex-color: white ;
   --mode-btn: url(../assets/moon-stars.svg);
+  --highlight:rgba(255, 255, 255, 0.20);
 }
 
 .Lg {
@@ -18,6 +19,7 @@
   --tex-color: rgba(0, 0, 0, 1) ;
   --stroke-color: rgba(0, 0, 0, 1) ;
   --mode-btn: url(../assets/sun.svg);
+  --highlight: rgba(0, 0, 0, 0.10);
 }
 
 body {
