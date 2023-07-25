@@ -51,6 +51,10 @@ body * {
   border-radius: 9999px;
 }
 
+.switch button:hover {
+  outline: 8px solid var(--highlight);
+}
+
 .switch span {
   display: block;
   width: 64px;
