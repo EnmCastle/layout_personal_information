@@ -12,13 +12,15 @@
     --stroke-color: rgba(255, 255, 255, 0.50)  ; //border
     --tex-color: white ;
     --mode-btn: url(../assets/moon-stars.svg);
+    --highlight:rgba(255, 255, 255, 0.20);
 }
 .Lg{
     --bg-mobile: url(../assets/bg-mobile-light.jpg);
     --surface-color: rgba(0, 0, 0, 0.05);
     --tex-color: rgba(0, 0, 0, 1) ;
     --stroke-color: rgba(0, 0, 0, 1) ;
-    --mode-btn: url(../assets/sun.svg);
+    --mode-btn: url(../assets/sun.svg); 
+    --highlight: rgba(0, 0, 0, 0.10);
 }
 
 body{
@@ -137,7 +139,7 @@ ul li a:hover{
 }
 
 #midias a:hover{
-    background-color:rgba(0, 0, 0, 0.10);
+    background-color:var(--highlight);
     border-radius: 50%;
 }
 
